@@ -17,6 +17,6 @@ We use 6 version of word vector, which from:
 
 After get them, unzip them into the data directory.
 
-It is no need to use all of the word vector. In our experiments, the Common Crawl (42B tokens): [300d](http://www-nlp.stanford.edu/data/glove.42B.300d.txt.gz) is the best one.
+It is no need to use all of the word vector. In our experiments, the [Common Crawl (42B tokens): 300d](http://www-nlp.stanford.edu/data/glove.42B.300d.txt.gz) is the best one.
 
 UNIX-like users can obtain all the data via `download_data.sh`.
