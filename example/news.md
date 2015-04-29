@@ -1,4 +1,5 @@
 As Japan's population ages, robots seen as workforce solution
+
 Tokyo (CNN)A crowd gathers near the entrance of Tokyo's upscale Mitsukoshi Department Store, which traces its roots to a kimono shop in the late 17th century.
 
 Fitting with the store's history, the new greeter wears a traditional Japanese kimono while delivering information to the growing crowd, whose expressions vary from amusement to bewilderment.
@@ -18,6 +19,7 @@ The regular greeter, Ayako Seiryu, says she's not worried about a robot replacin
 Chihira can't have a conversation yet, acknowledges Hitoshi Tokuda, Toshiba spokesperson. But he says the technology is evolving quickly and someday, robots like Chihira could replace humans for certain jobs.
 
 Robots in the workforce?
+
 A growing number of Japanese businesses are testing out robots as a possible solution to the country's shrinking workforce.
 
 They're appearing in stores, banks and soon even hotels.
