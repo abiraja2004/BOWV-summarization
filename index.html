@@ -1,33 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bowv-summarization by alzhusan</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <title>Bowv-summarization by alzhusan</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Bowv-summarization</h1>
-        <p>BOWV-summarization is a automatic summarization system, which is base on the bag of word vectors (BOWV) representation.</p>
-        <p class="view"><a href="https://github.com/alzhusan/BOWV-summarization">View the Project on GitHub <small>alzhusan/BOWV-summarization</small></a></p>
-        <ul>
-          <li><a href="https://github.com/alzhusan/BOWV-summarization/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/alzhusan/BOWV-summarization/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/alzhusan/BOWV-summarization">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Bowv-summarization</h1>
+          <h2>BOWV-summarization is a automatic summarization system, which is base on the bag of word vectors (BOWV) representation.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/alzhusan/BOWV-summarization/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/alzhusan/BOWV-summarization/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/alzhusan/BOWV-summarization" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a id="bowv-summarization" class="anchor" href="#bowv-summarization" aria-hidden="true"><span class="octicon octicon-link"></span></a>BOWV-summarization</h1>
 
 <p>BOWV-summarization is a automatic summarization system, which is base on the bag of word vectors (BOWV) representation.</p>
@@ -55,7 +59,7 @@
 <pre><code>$python summarization.py example/dlbook-c1.md
 </code></pre>
 
-<p>The automatic extractive summary of the <a href="example/dlbook-c1.md">1st chapter</a> in the <a href="http://www-labs.iro.umontreal.ca/%7Ebengioy/dlbook/">deep learning book from Yoshua Bengio</a>.</p>
+<p>The automatic extractive summary of the <a href="https://github.com/alzhusan/BOWV-summarization/blob/master/example/dlbook-c1.md">1st chapter</a> in the <a href="http://www-labs.iro.umontreal.ca/%7Ebengioy/dlbook/">deep learning book from Yoshua Bengio</a>.</p>
 
 <blockquote>
 <p>Deep learning is a particular kind of machine learning that achieves great power and flexibility by learning to represent the world as a nested hierarchy of concepts, with each concept defined in relation to simpler concepts.
@@ -68,7 +72,7 @@ The introduction of machine learning allowed computers to tackle problems involv
 <pre><code>$python summarization.py -v 4 -k 4 example/news.md 
 </code></pre>
 
-<p>The automatic extractive summary of a <a href="example/news.md">news</a> from <a href="http://edition.cnn.com/2015/04/24/asia/japan-robots-work/index.html">CNN</a>.</p>
+<p>The automatic extractive summary of a <a href="https://github.com/alzhusan/BOWV-summarization/blob/master/example/news.md">news</a> from <a href="http://edition.cnn.com/2015/04/24/asia/japan-robots-work/index.html">CNN</a>.</p>
 
 <blockquote>
 <p>Bank of Tokyo-Mitsubishi UFJ is trying out "Nao," a customer service robot that answers basic questions and is designed to speak 19 languages.
@@ -76,13 +80,15 @@ A growing number of Japanese businesses are testing out robots as a possible sol
 But he says the technology is evolving quickly and someday, robots like Chihira could replace humans for certain jobs.
 The regular greeter, Ayako Seiryu, says she's not worried about a robot replacing her -- even one made to resemble a real 32-year-old woman.</p>
 </blockquote>
-      </section>
+        </section>
+
+        <footer>
+          Bowv-summarization is maintained by <a href="https://github.com/alzhusan">alzhusan</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/alzhusan">alzhusan</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
