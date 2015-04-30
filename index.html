@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bowv-summarization by alzhusan</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Bowv-summarization</h1>
+        <p>BOWV-summarization is a automatic summarization system, which is base on the bag of word vectors (BOWV) representation.</p>
+        <p class="view"><a href="https://github.com/alzhusan/BOWV-summarization">View the Project on GitHub <small>alzhusan/BOWV-summarization</small></a></p>
+        <ul>
+          <li><a href="https://github.com/alzhusan/BOWV-summarization/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/alzhusan/BOWV-summarization/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/alzhusan/BOWV-summarization">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="bowv-summarization" class="anchor" href="#bowv-summarization" aria-hidden="true"><span class="octicon octicon-link"></span></a>BOWV-summarization</h1>
+
+<p>BOWV-summarization is a automatic summarization system, which is base on the bag of word vectors (BOWV) representation.</p>
+
+<p>BOWV is a semantic representation, which can represent words, phrases, sentences, paragraphs and documents in a same vector space. In the BOWV space, we can approximately measure the semantic similarity with the distance between BOWV representations. We utilize it for extractive automatic summarization.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>summarization.py [-k sentence-num] [-v word-vector-version] file
+    file: the text file to be obtained a summary
+    sentence-num: the number of extracted sentence, default is 5
+    word-vector-version: 0-5, default is 0 ...
+        0    glove.6B.50d.txt
+        1    glove.6B.100d.txt
+        2    glove.6B.200d.txt
+        3    glove.6B.300d.txt
+        4    glove.42B.300d.txt
+        5    glove.840B.300d.txt
+</code></pre>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<pre><code>$python summarization.py example/dlbook-c1.md
+</code></pre>
+
+<p>The automatic extractive summary of the <a href="example/dlbook-c1.md">1st chapter</a> in the <a href="http://www-labs.iro.umontreal.ca/%7Ebengioy/dlbook/">deep learning book from Yoshua Bengio</a>.</p>
+
+<blockquote>
+<p>Deep learning is a particular kind of machine learning that achieves great power and flexibility by learning to represent the world as a nested hierarchy of concepts, with each concept defined in relation to simpler concepts.
+Fig 1 shows how a deep learning system can represent the concept of an image of a person by combining simpler concepts, such as corners and contours, which are in turn defined in terms of edges.
+Deep learning solves this central problem in representation learning by introducing representations that are expressed in terms of other, simpler representations.
+A major source of difficulty in many real-world artificial intelligence applications is that many of the factors of variation influence every single piece of data we are able to observe.
+The introduction of machine learning allowed computers to tackle problems involving knowledge of the real world and make decisions that appear subjective.</p>
+</blockquote>
+
+<pre><code>$python summarization.py -v 4 -k 4 example/news.md 
+</code></pre>
+
+<p>The automatic extractive summary of a <a href="example/news.md">news</a> from <a href="http://edition.cnn.com/2015/04/24/asia/japan-robots-work/index.html">CNN</a>.</p>
+
+<blockquote>
+<p>Bank of Tokyo-Mitsubishi UFJ is trying out "Nao," a customer service robot that answers basic questions and is designed to speak 19 languages.
+A growing number of Japanese businesses are testing out robots as a possible solution to the country's shrinking workforce.
+But he says the technology is evolving quickly and someday, robots like Chihira could replace humans for certain jobs.
+The regular greeter, Ayako Seiryu, says she's not worried about a robot replacing her -- even one made to resemble a real 32-year-old woman.</p>
+</blockquote>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/alzhusan">alzhusan</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
